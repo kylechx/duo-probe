@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-variant="translucent">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080C0F" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="../probe.css" />
+    <title>Duo probe B · Translucent</title>
+  </head>
+  <body>
+    <div class="zone t"></div><div class="zone r"></div><div class="zone b"></div><div class="zone l"></div>
+    <div class="frame"></div>
+    <main>
+      <p class="tag">B · Test: black-translucent status bar</p>
+      <p class="warn" id="warn" hidden>Opened in a Safari tab. Add this page to the Home Screen and open it from the icon.</p>
+      <p class="line" id="line">measuring…</p>
+      <dl id="details"></dl>
+      <p class="key">It works if this shows the pre-27.2 numbers: open <b>951</b> wide with insets
+        <b>0 / 84 / 34 / 0</b>, closed <b>466</b> wide with right inset <b>84</b>, or if orange fills the status column.
+        If it matches the Control (867 / 382, right inset 0), the setting doesn't help. The dashed yellow line is the
+        window's edge; striped zones are the safe-area insets.</p>
+    </main>
+    <script src="../probe.js"></script>
+  </body>
+</html>
